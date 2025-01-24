@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@android:color/background_light"
+        android:gravity="center">
+
+        <!-- Harimau -->
+        <TextView
+            android:id="@+id/text_hewan1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Harimau"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_blue_dark"
+            android:padding="8dp" />
+
+        <ImageView
+            android:id="@+id/image_hewan1"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/harimau"
+            android:contentDescription="Gambar Harimau"
+            android:layout_marginBottom="16dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/image_background" />
+
+        <Button
+            android:id="@+id/button_hewan1_google"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lihat di Google"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/button_background"
+            android:textColor="@android:color/white"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:onClick="openHewan1GoogleLinks" />
+
+        <Button
+            android:id="@+id/button_hewan1_youtube"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lihat di YouTube"
+            android:background="@drawable/button_background"
+            android:textColor="@android:color/white"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:onClick="openHewan1YouTubeLinks" />
+
+        <!-- Kucing -->
+        <TextView
+            android:id="@+id/text_hewan2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kucing"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_blue_dark"
+            android:padding="8dp" />
+
+        <ImageView
+            android:id="@+id/image_hewan2"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/kucing"
+        android:contentDescription="Gambar Kucing"
+        android:layout_marginBottom="16dp"
+        android:scaleType="centerCrop"
+        android:background="@drawable/image_background" />
+
+        <Button
+            android:id="@+id/button_hewan2_google"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lihat di Google"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/button_background"
+            android:textColor="@android:color/white"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:onClick="openHewan2GoogleLinks" />
+
+        <Button
+            android:id="@+id/button_hewan2_youtube"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lihat di YouTube"
+            android:background="@drawable/button_background"
+            android:textColor="@android:color/white"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:onClick="openHewan2YouTubeLinks" />
+
+        <!-- Anjing -->
+        <TextView
+            android:id="@+id/text_hewan3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Anjing"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_blue_dark"
+            android:padding="8dp" />
+
+        <ImageView
+            android:id="@+id/image_hewan3"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/anjing"
+        android:contentDescription="Gambar Anjing"
+        android:layout_marginBottom="16dp"
+        android:scaleType="centerCrop"
+        android:background="@drawable/image_background" />
+
+        <Button
+            android:id="@+id/button_hewan3_google"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lihat di Google"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/button_background"
+            android:textColor="@android:color/white"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:onClick="openHewan3GoogleLinks" />
+
+        <Button
+            android:id="@+id/button_hewan3_youtube"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lihat di YouTube"
+            android:background="@drawable/button_background"
+            android:textColor="@android:color/white"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:onClick="openHewan3YouTubeLinks" />
+
+    </LinearLayout>
+</ScrollView>
