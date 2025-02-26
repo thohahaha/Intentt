@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:background="@android:color/background_light"
+        android:gravity="center">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pohon Mangga"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_green_dark"
+            android:padding="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pohon Mangga adalah salah satu tanaman buah tropis yang populer. Buahnya yang manis dan segar sering dijadikan camilan atau olahan makanan."
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:paddingBottom="8dp"/>
+
+        <ImageView
+            android:id="@+id/image_tumbuhan1"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginBottom="16dp"
+            android:background="@drawable/image_background"
+            android:contentDescription="Gambar Pohon Mangga"
+            android:scaleType="centerCrop"
+            android:src="@drawable/mangga" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:layout_marginTop="8dp">
+
+            <ImageButton
+                android:id="@+id/button_tumbuhan1_like"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_like"
+                android:contentDescription="Like"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="12dp"
+                android:onClick="likeTumbuhan1"
+                app:tint="@color/like_button_color" />
+
+            <ImageButton
+                android:id="@+id/button_tumbuhan1_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/share"
+                android:contentDescription="Share"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="12dp"
+                android:onClick="shareTumbuhan1" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_tumbuhan1_google"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lihat di Google"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/button_background"
+            android:textColor="@android:color/white"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:onClick="openTumbuhan1GoogleLinks" />
+
+        <Button
+            android:id="@+id/button_tumbuhan1_youtube"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lihat di YouTube"
+            android:background="@drawable/button_background"
+            android:textColor="@android:color/white"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:onClick="openTumbuhan1YouTubeLinks" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Padi"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_green_dark"
+            android:padding="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Padi adalah tanaman pangan utama di banyak negara, terutama di Asia. Beras yang dihasilkan dari padi menjadi sumber makanan pokok bagi miliaran orang."
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:paddingBottom="8dp"/>
+
+        <ImageView
+            android:id="@+id/image_tumbuhan2"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/padi"
+            android:contentDescription="Gambar Padi"
+            android:layout_marginBottom="16dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/image_background" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:layout_marginTop="8dp">
+
+            <ImageButton
+                android:id="@+id/button_tumbuhan2_like"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_like"
+                android:contentDescription="Like"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="12dp"
+                android:onClick="likeTumbuhan2"
+                app:tint="@color/like_button_color" />
+
+            <ImageButton
+                android:id="@+id/button_tumbuhan2_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/share"
+                android:contentDescription="Share"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="12dp"
+                android:onClick="shareTumbuhan2" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_tumbuhan2_google"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lihat di Google"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/button_background"
+            android:textColor="@android:color/white"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:onClick="openTumbuhan2GoogleLinks" />
+
+        <Button
+            android:id="@+id/button_tumbuhan2_youtube"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lihat di YouTube"
+            android:background="@drawable/button_background"
+            android:textColor="@android:color/white"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:onClick="openTumbuhan2YouTubeLinks" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pohon Ringin"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/holo_green_dark"
+            android:padding="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pohon Ringin, atau dikenal sebagai beringin, adalah pohon besar yang sering dianggap sakral di berbagai budaya. Akar gantungnya unik dan memiliki peran penting dalam ekosistem."
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:paddingBottom="8dp"/>
+
+        <ImageView
+            android:id="@+id/image_tumbuhan3"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/ringin"
+            android:contentDescription="Gambar Pohon Ringin"
+            android:layout_marginBottom="16dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/image_background" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:layout_marginTop="8dp">
+
+            <ImageButton
+                android:id="@+id/button_tumbuhan3_like"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_like"
+                android:contentDescription="Like"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="12dp"
+                android:onClick="likeTumbuhan3"
+                app:tint="@color/like_button_color" />
+
+            <ImageButton
+                android:id="@+id/button_tumbuhan3_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/share"
+                android:contentDescription="Share"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="12dp"
+                android:onClick="shareTumbuhan3" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_tumbuhan3_google"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lihat di Google"
+            android:layout_marginBottom="8dp"
+            android:background="@drawable/button_background"
+            android:textColor="@android:color/white"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:onClick="openTumbuhan3GoogleLinks" />
+
+        <Button
+            android:id="@+id/button_tumbuhan3_youtube"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lihat di YouTube"
+            android:background="@drawable/button_background"
+            android:textColor="@android:color/white"
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:onClick="openTumbuhan3YouTubeLinks" />
+
+    </LinearLayout>
+</ScrollView>

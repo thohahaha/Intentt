@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fillViewport="true">
@@ -27,22 +28,57 @@
             android:id="@+id/image_hewan1"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:src="@drawable/harimau"
-            android:contentDescription="Gambar Harimau"
             android:layout_marginBottom="16dp"
+            android:background="@drawable/image_background"
+            android:contentDescription="Gambar Harimau"
             android:scaleType="centerCrop"
-            android:background="@drawable/image_background" />
+            android:src="@drawable/harimau" />
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:layout_marginTop="8dp">
+
+            <ImageButton
+                android:id="@+id/button_hewan1_like"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_like"
+                android:contentDescription="Like"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="12dp"
+                android:onClick="likeHewan1"
+                app:tint="@color/like_button_color" />
+
+            <ImageButton
+                android:id="@+id/button_hewan1_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/share"
+                android:contentDescription="Share"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="12dp"
+                android:onClick="shareHewan1" />
+        </LinearLayout>
+
+        <!-- Keterangan Harimau -->
+        <TextView
+            android:id="@+id/text_hewan1_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Harimau adalah kucing terbesar yang hidup di hutan dan padang rumput."
+            android:textSize="16sp"
+            android:paddingTop="4dp"
+            android:textColor="@android:color/black" />
+
+        <!-- Tombol -->
         <Button
             android:id="@+id/button_hewan1_google"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Lihat di Google"
-            android:layout_marginBottom="8dp"
-            android:background="@drawable/button_background"
-            android:textColor="@android:color/white"
-            android:padding="12dp"
-            android:textSize="16sp"
             android:onClick="openHewan1GoogleLinks" />
 
         <Button
@@ -50,10 +86,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Lihat di YouTube"
-            android:background="@drawable/button_background"
-            android:textColor="@android:color/white"
-            android:padding="12dp"
-            android:textSize="16sp"
             android:onClick="openHewan1YouTubeLinks" />
 
         <!-- Kucing -->
@@ -72,21 +104,47 @@
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:src="@drawable/kucing"
-        android:contentDescription="Gambar Kucing"
-        android:layout_marginBottom="16dp"
-        android:scaleType="centerCrop"
-        android:background="@drawable/image_background" />
+            android:contentDescription="Gambar Kucing"
+            android:scaleType="centerCrop" />
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end"
+            android:layout_marginTop="8dp">
+
+            <ImageButton
+                android:id="@+id/button_hewan2_like"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_like"
+                android:onClick="likeHewan2" />
+
+            <ImageButton
+                android:id="@+id/button_hewan2_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/share"
+                android:onClick="shareHewan2" />
+        </LinearLayout>
+
+        <!-- Keterangan Kucing -->
+        <TextView
+            android:id="@+id/text_hewan2_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kucing adalah hewan peliharaan yang lucu dan sering dijadikan teman di rumah."
+            android:textSize="16sp"
+            android:paddingTop="4dp"
+            android:textColor="@android:color/black" />
+
+        <!-- Tombol -->
         <Button
             android:id="@+id/button_hewan2_google"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Lihat di Google"
-            android:layout_marginBottom="8dp"
-            android:background="@drawable/button_background"
-            android:textColor="@android:color/white"
-            android:padding="12dp"
-            android:textSize="16sp"
             android:onClick="openHewan2GoogleLinks" />
 
         <Button
@@ -94,10 +152,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Lihat di YouTube"
-            android:background="@drawable/button_background"
-            android:textColor="@android:color/white"
-            android:padding="12dp"
-            android:textSize="16sp"
             android:onClick="openHewan2YouTubeLinks" />
 
         <!-- Anjing -->
@@ -116,21 +170,46 @@
             android:layout_width="match_parent"
             android:layout_height="200dp"
             android:src="@drawable/anjing"
-        android:contentDescription="Gambar Anjing"
-        android:layout_marginBottom="16dp"
-        android:scaleType="centerCrop"
-        android:background="@drawable/image_background" />
+            android:contentDescription="Gambar Anjing"
+            android:scaleType="centerCrop" />
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="end">
+
+            <ImageButton
+                android:id="@+id/button_hewan3_like"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_like"
+                android:onClick="likeHewan3" />
+
+            <ImageButton
+                android:id="@+id/button_hewan3_share"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/share"
+                android:onClick="shareHewan3" />
+        </LinearLayout>
+
+        <!-- Keterangan Anjing -->
+        <TextView
+            android:id="@+id/text_hewan3_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Anjing adalah sahabat manusia yang setia dan dapat dilatih untuk berbagai tugas."
+            android:textSize="16sp"
+            android:paddingTop="4dp"
+            android:textColor="@android:color/black" />
+
+        <!-- Tombol -->
         <Button
             android:id="@+id/button_hewan3_google"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Lihat di Google"
-            android:layout_marginBottom="8dp"
-            android:background="@drawable/button_background"
-            android:textColor="@android:color/white"
-            android:padding="12dp"
-            android:textSize="16sp"
             android:onClick="openHewan3GoogleLinks" />
 
         <Button
@@ -138,10 +217,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Lihat di YouTube"
-            android:background="@drawable/button_background"
-            android:textColor="@android:color/white"
-            android:padding="12dp"
-            android:textSize="16sp"
             android:onClick="openHewan3YouTubeLinks" />
 
     </LinearLayout>
